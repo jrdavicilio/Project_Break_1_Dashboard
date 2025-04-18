@@ -43,15 +43,3 @@ const addLinkButton = document.getElementById ('addLinkButton')
     }
 
     renderLinks();
-
-
-
-
-/*
-Al pulsar el botón de `añadir link` se añadirá en DOM y en `localStorage` para poder recuperarlo siempre.
-- Cada elemento tendrá el nombre que hemos añadido y el enlace al pulsar sobre él. 
-- Botón de eliminar si ya no vamos a hacer uso de él.
-
-- Guarda el dato en el `localStorage` a la vez que se crea en el `DOM`
-- Cuando se carga la página el dato del `LocalStorage` deberá aparecer de inicio
-*/
