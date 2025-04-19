@@ -13,14 +13,37 @@
             <h2>HOME</h2>
         </a>
     </header>
-    <section>
+    <div id="sections1">
+        <section id="digital-clock">
+            <div id="container">
+                <div id="digitalClock"></div>
+                <div id="messageContainer"></div>
+            </div>
+        </section>
+        <section id="links">
+            <div class="list">
+                <div class="inputContainer">
+                    <input type="text" id="nameInput" placeholder="Nombre del enlace" required>
+                    <input type="text" id="urlInput" placeholder="URL del enlace" required>
+                    <button id="addLinkButton">Añadir enlace</button>
+                </div>
+                <ul id="linksContainer"></ul>
+            </div>
+        </section>
+    </div>
+    <div id="sections2">
+        <section id="password-generator">
             <div id="containerPassword">
                 <h2>Generador de Contraseñas</h2>
                 <input type="number" id="passwordLength" min="12" max="50" placeholder="Nº caracteres">
                 <button id="passwordGenerator">Generar Contraseña</button>
                 <p id="result"></p>
             </div>
-    </section>
+        </section>
+        <section id="weather-api">
+            <div id="weatherContainer"></div>
+        </section>
+    </div>
     <footer class="footer">
         <nav>
             <a href="/html/digital-clock.html">
@@ -38,6 +61,9 @@
         </nav>
     </footer>
 </body>
+<script src="/js/digital-clock.js"> </script>
+<script src="/js/links.js"> </script>
 <script src="/js/password-generator.js"> </script>
+<script src="/js/weather-api.js"> </script>
 <script src="/js/background-images.js"></script>
 </html>

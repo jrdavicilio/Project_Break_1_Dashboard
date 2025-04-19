@@ -40,7 +40,7 @@ function editClock() {
   }
 
   digitalClock.innerHTML = `
-    <p>${dateParts.hours}:${dateParts.minutes}:${dateParts.seconds}</p>
+    <h2>${dateParts.hours}:${dateParts.minutes}:${dateParts.seconds}</h2>
     <p>${dateParts.day}/${dateParts.month}/${dateParts.year}</p>
   `;
 

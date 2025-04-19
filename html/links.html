@@ -7,14 +7,38 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="list">
-        <div class="inputContainer">
-            <input type="text" id="nameInput" placeholder="Nombre del enlace" required>
-            <input type="text" id="urlInput" placeholder="URL del enlace" required>
-            <button id="addLinkButton">Añadir enlace</button>
+    <header class="header">
+        <a href="/html/index.html">
+            <img src="/jpg/hogar.png" alt="casa">
+            <h2>HOME</h2>
+        </a>
+    </header>
+    <section>
+        <div class="list">
+            <div class="inputContainer">
+                <input type="text" id="nameInput" placeholder="Nombre del enlace" required>
+                <input type="text" id="urlInput" placeholder="URL del enlace" required>
+                <button id="addLinkButton">Añadir enlace</button>
+            </div>
+            <ul id="linksContainer"></ul>
         </div>
-        <ul id="linksContainer"></ul>
-    </div>
+    </section>
+    <footer class="footer">
+        <nav>
+            <a href="/html/digital-clock.html">
+                <img src="/jpg/clock.png" alt="clock">
+            </a>
+            <a href="/html/password-generator.html">
+                <img src="/jpg/padlock.png" alt="padlock">
+            </a>
+            <a href="/html/links.html">
+                <img src="/jpg/link.png" alt="link">
+            </a>
+            <a href="/html/weather-api.html">
+                <img src="/jpg/weather.png" alt="weather">
+            </a>
+        </nav>
+    </footer>
 </body>
 <script src="/js/links.js"> </script>
 <script src="/js/background-images.js"></script>

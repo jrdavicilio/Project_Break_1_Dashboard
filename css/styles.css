@@ -1,4 +1,401 @@
-body {
-    height: 100vh;
+
+/*FONT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*RESET CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*ALL*/
+
+#sections1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sections2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*HEADER*/
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 10px 20px;
+  border-radius: 999px;
+}
+
+.header img {
+  height: 36px;
+  width: 36px;
+}
+
+/*SECTION*/
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/*FOOTER*/
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+.footer nav {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.footer img {
+  height: 60px;
+  width: 60px;
+}
+
+/*CLOCK*/
+
+#container {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 12px;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+#digitalClock h2 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#digitalClock p {
+  font-size: 20px;
+  color: #dddddd;
+}
+
+#messageContainer {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+
+/*LINKS*/
+
+.list {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 40px 60px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+  
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.inputContainer input,
+.inputContainer button {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.inputContainer input {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+.inputContainer button {
+  background-color: rgb(3, 113, 216);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputContainer button:hover {
+  background-color: rgba(3, 113, 216, 0.801);
+}
+
+#linksContainer {
+    overflow-y: auto;
+    padding-right: 5px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #linksContainer li {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: white;
     margin: 0;
-    padding: 0;}
+  }
+
+#linksContainer a {
+  color: white;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+#linksContainer a:hover {
+  text-decoration: underline;
+}
+
+#linksContainer button {
+    margin-left: 10px;
+    background: rgb(3, 113, 216);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+#linksContainer button:hover {
+  background-color: rgba(3, 113, 216, 0.801);
+}
+
+/* PASSWORD */
+#containerPassword {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+    margin: 20px 0;
+}
+
+#containerPassword h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Separa el título de los inputs */
+}
+
+#passwordLength {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Separa el input del botón */
+}
+
+#passwordGenerator {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(3, 113, 216);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#passwordGenerator:hover {
+    background-color: rgba(3, 113, 216, 0.801);
+}
+
+#result {
+    font-size: 24px;
+    color: #f1f1f1;
+    font-weight: bold;
+    margin-top: 20px;
+    word-break: break-all;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.153); /* Fondo oscuro */
+    min-height: 50px; /* Altura mínima para evitar el cambio de tamaño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result:empty {
+    visibility: hidden;
+}
+
+/* WEATHER */
+#weatherContainer {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    backdrop-filter: blur(2px); /* Desenfoque */
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del clima */
+#currentWeather h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Descripción del clima */
+#currentWeather p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Información principal */
+#currentData {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Detalles de temperatura, icono y otros */
+#currentGrades {
+    width: 60%;
+    text-align: left;
+}
+
+#currentGrades img.weatherIcon {
+    width: 50px;
+    height: 50px;
+}
+
+#currentGrades p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Lista de información (precipitaciones, humedad, viento) alineado a la derecha */
+#currentGrades ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#currentGrades ul li {
+    font-size: 16px;
+}
+
+/* Pronóstico por hora */
+#forecastWeather {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px; /* Añadir espacio para la barra de desplazamiento */
+}
+
+#forecastWeather::-webkit-scrollbar {
+    height: 8px;
+}
+
+#forecastWeather::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para la barra */
+    border-radius: 8px;
+}
+
+#forecastWeather li {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80px;
+    height: auto;
+}
+
+#forecastWeather img {
+    width: 40px;
+    height: 40px;
+}
+
+#forecastWeather p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Alineación de la lista de humedad, viento, etc. */
+#currentData .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.details p {
+    font-size: 16px;
+    color: #fff;
+}
