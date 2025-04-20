@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#sections1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#sections2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px 20px;
+    border-radius: 999px;
+}
+
+.header img {
+    height: 36px;
+    width: 36px;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.footer nav {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.footer img {
+    height: 60px;
+    width: 60px;
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+  
+#digitalClock h2 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+  
+#digitalClock p {
+    font-size: 20px;
+    color: #dddddd;
+}
+  
+#messageContainer {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+}
+  
+.list {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    width: 100%;
+    width: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 730px;
+    overflow: hidden;
+}
+    
+  
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+  
+.inputContainer h2 {
+    font-weight: bold;
+}
+  
+.inputContainer input,
+.inputContainer button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+  
+.inputContainer input {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+  
+.inputContainer button {
+    background-color: rgb(3, 113, 216);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.inputContainer button:hover {
+    background-color: rgba(3, 113, 216, 0.801);
+}
+  
+#linksContainer {
+    overflow-y: auto;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+#linksContainer::-webkit-scrollbar {
+    width: 8px;
+}
+  
+#linksContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+  
+#linksContainer li {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: white;
+    margin: 0;
+}
+  
+#linksContainer a {
+    color: white;
+    text-decoration: none;
+    word-break: break-all;
+}
+  
+#linksContainer a:hover {
+    text-decoration: underline;
+}
+  
+#linksContainer button {
+    margin-left: 10px;
+    background: rgb(3, 113, 216);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+  
+#linksContainer button:hover {
+    background-color: rgba(3, 113, 216, 0.801);
+}
+
+#containerPassword {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+}
+  
+#containerPassword {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+#inputButton {
+    display: flex;
+    flex-direction: row;
+}
+  
+#containerPassword h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+#passwordLength {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    width: 140px;
+    margin-right: 5px;
+    height: 40px;
+}
+  
+#passwordGenerator {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(3, 113, 216);
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+#passwordGenerator:hover {
+    background-color: rgba(3, 113, 216, 0.801);
+}
+  
+#result {
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-top: 20px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+  
+#result:empty {
+    visibility: hidden;
+}
+
+#weatherContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+#currentWeather {
+    display: flex;
+    flex-direction: column;
+}
+  
+#currentWeather h2 {
+    font-size: 24px;
+    color: #fff;
+}
+  
+#currentWeather p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+  
+#currentData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+#currentGrades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#currentGrades img {
+    width: 100px;
+    height: 100px;
+}
+  
+#currentGrades p {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: lighter;
+    color: #fff;
+}
+  
+#currentGrades ul {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+#currentGrades ul li {
+    font-size: 16px;
+}
+  
+#forecastWeather {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+  
+#forecastWeather::-webkit-scrollbar {
+    height: 8px;
+}
+  
+#forecastWeather::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+  
+#forecastWeather li {
+    text-align: center;
+    list-style: none;
+    width: 60px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+#forecastWeather img {
+    width: 50px;
+    height: 50px;
+}
+  
+#forecastWeather p {
+    margin: 5px 0;
+    color: #fff;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-main-page.css">
 </head>
 <body>
     <header class="header">
@@ -13,16 +13,12 @@
             <h2>HOME</h2>
         </a>
     </header>
+    <article>
     <div id="sections1">
-        <section id="digital-clock">
-            <div id="container">
-                <div id="digitalClock"></div>
-                <div id="messageContainer"></div>
-            </div>
-        </section>
         <section id="links">
             <div class="list">
                 <div class="inputContainer">
+                    <h2>Añade tu enlace de interés</h2>
                     <input type="text" id="nameInput" placeholder="Nombre del enlace" required>
                     <input type="text" id="urlInput" placeholder="URL del enlace" required>
                     <button id="addLinkButton">Añadir enlace</button>
@@ -32,18 +28,27 @@
         </section>
     </div>
     <div id="sections2">
-        <section id="password-generator">
-            <div id="containerPassword">
-                <h2>Generador de Contraseñas</h2>
-                <input type="number" id="passwordLength" min="12" max="50" placeholder="Nº caracteres">
-                <button id="passwordGenerator">Generar Contraseña</button>
-                <p id="result"></p>
+        <section id="digital-clock">
+            <div id="container">
+                <div id="digitalClock"></div>
+                <div id="messageContainer"></div>
             </div>
         </section>
         <section id="weather-api">
             <div id="weatherContainer"></div>
         </section>
+        <section id="password-generator">
+            <div id="containerPassword">
+                <h2>Generador de Contraseñas</h2>
+                <div id="inputButton">
+                    <input type="number" id="passwordLength" min="12" max="50" placeholder="Nº caracteres">
+                    <button id="passwordGenerator">Generar Contraseña</button>
+                </div>
+                <p id="result"></p>
+            </div>
+        </section>
     </div>
+    </article>
     <footer class="footer">
         <nav>
             <a href="/html/digital-clock.html">

@@ -11,12 +11,12 @@ async function fetchData() {
             <p>${data.current.condition.text}</p>
             <div id="currentData">
                 <div id="currentGrades">
-                    <img class="weatherIcon" src="${data.current.condition.icon}" alt="${data.current.condition.text}">
-                    <p>${data.current.temp_c}°C</p>
+                        <img class="weatherIcon" src="${data.current.condition.icon}" alt="${data.current.condition.text}">
+                        <p>${data.current.temp_c}°C</p>
                     <ul>
-                        <li>${data.current.precip_mm}mm</li>
-                        <li>${data.current.humidity}%</li>
-                        <li>${data.current.wind_kph}km/h</li>
+                        <li>Precipitaciones: ${data.current.precip_mm}mm</li>
+                        <li>Humedad: ${data.current.humidity}%</li>
+                        <li>Viento: ${data.current.wind_kph}km/h</li>
                     </ul>
                 </div>
                 <ul id="forecastWeather"></ul>
